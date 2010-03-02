@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;proxy name="${1:ProxyName}" transports="http"&gt;
+    &lt;target inSequence="sequence/Proxy.${1:tag}.In.xml" outSequence="sequence/Proxy.${1:tag}.Out.xml" faultSequence="fault"/&gt;
+    &lt;publishWSDL key="wsdl/${1:tag}.wsdl"/&gt;
+&lt;/proxy&gt;
+</string>
+	<key>name</key>
+	<string>Proxy</string>
+	<key>tabTrigger</key>
+	<string>proxy</string>
+	<key>uuid</key>
+	<string>60E773F7-1595-4A37-9897-8804899F30C8</string>
+</dict>
+</plist>

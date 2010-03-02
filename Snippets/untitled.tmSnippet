@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?xml version="1.0"?&gt;
+&lt;sequence xmlns="http://ws.apache.org/ns/synapse" name="$1"&gt;
+	&lt;property name="SEQUENCE" action="set" value="${1:tag}"/&gt;
+	&lt;log level="full" separator=","&gt;
+		&lt;property name="MESSAGE" value="IN ${1/.+/\U$0/}"/&gt;
+	&lt;/log&gt;
+	&lt;xslt key="transform/${1:tag}.xslt"&gt;
+	&lt;/xslt&gt;
+	&lt;send&gt;
+		&lt;endpoint key="endpoint/${1:tag}.xml"/&gt;
+	&lt;/send&gt;
+&lt;/sequence&gt;
+</string>
+	<key>name</key>
+	<string>Sequence</string>
+	<key>tabTrigger</key>
+	<string>sequence</string>
+	<key>uuid</key>
+	<string>4B4DD640-DD83-4C66-AD1C-0E0A5F3AC4CD</string>
+</dict>
+</plist>

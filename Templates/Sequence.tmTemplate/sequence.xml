@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<sequence xmlns="http://ws.apache.org/ns/synapse" name="${TM_NEW_FILE_BASENAME}">
+	<property name="SEQUENCE" action="set" value="${TM_NEW_FILE_BASENAME}"/>
+	<log level="full" separator=",">
+		<property name="MESSAGE" value="IN ${TM_NEW_FILE_BASENAME}"/>
+	</log>
+	<xslt key="transform/${TM_NEW_FILE_BASENAME}.xslt">
+	</xslt>
+	<send>
+		<endpoint key="endpoint/${TM_NEW_FILE_BASENAME}.xml"/>
+	</send>
+</sequence>
