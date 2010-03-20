@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;log level="full" separator=","&gt;
+	&lt;property name="MESSAGE" value="$1"/&gt;
+&lt;/log&gt;
+</string>
+	<key>name</key>
+	<string>Log Mediator</string>
+	<key>tabTrigger</key>
+	<string>log</string>
+	<key>uuid</key>
+	<string>66520F64-9DAD-4D63-A593-46B2927F0073</string>
+</dict>
+</plist>
