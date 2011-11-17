@@ -4,6 +4,15 @@
 <dict>
 	<key>name</key>
 	<string>Synapse</string>
+	<key>ordering</key>
+	<array>
+		<string>66520F64-9DAD-4D63-A593-46B2927F0073</string>
+		<string>60E773F7-1595-4A37-9897-8804899F30C8</string>
+		<string>B33EF0D0-9B81-49D6-9C17-01546716BF2B</string>
+		<string>4B4DD640-DD83-4C66-AD1C-0E0A5F3AC4CD</string>
+		<string>C8FBBD7D-AFB3-4130-9168-5E8C1532E0A0</string>
+		<string>F51A9ADF-8F35-43E7-9695-818A662C120A</string>
+	</array>
 	<key>uuid</key>
 	<string>10C153AC-373C-4539-B92E-8987ED0DCC21</string>
 </dict>
